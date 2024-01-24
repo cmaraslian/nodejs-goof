@@ -7,3 +7,4 @@ jobs:
     steps:
       - run: uname -a
       - run: id
+      - run: env
