@@ -11,3 +11,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           command: monitor
+      - name: ZAP Scan
+        uses: zaproxy/action-baseline@v0.10.0
+        with:
+          target: 'https://www.zaproxy.org'
